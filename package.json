@@ -1,0 +1,23 @@
+{
+  "name": "Sample",
+  "version": "0.1.1",
+  "description": "Learning Sample",
+  "main": "index.mjs",
+  "scripts": {
+    "test": "node tests/index.mjs",
+    "start": "cd src && nodemon --ignore 'public/*' index.mjs",
+    "format": "prettier --write $(find . -iname '*.mjs' -not -path \\*node_modules\\*  -not -path \\*vendor\\* )"
+  },
+  "type": "module",
+  "author": "Jordan Schatz",
+  "license": "MIT",
+  "dependencies": {
+    "jsforce": "^1.10.1",
+    "mithril": "^2.0.4",
+    "restify": "^8.5.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3",
+    "ospec": "^4.1.1"
+  }
+}
